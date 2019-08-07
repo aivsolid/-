@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA14B0D9-5EEB-45AD-8402-285162C8AF5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Egais.Entities</RootNamespace>
+    <AssemblyName>Egais.Entities</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActChargeOn.cs" />
+    <Compile Include="ActChargeOnShop_v2.cs" />
+    <Compile Include="ActChargeOn_v2.cs" />
+    <Compile Include="ActFixBarCode.cs" />
+    <Compile Include="ActInventoryABInfo.cs" />
+    <Compile Include="ActInventoryF1F2Info.cs" />
+    <Compile Include="ActInventoryInformBReg.cs" />
+    <Compile Include="ActInventoryInformF2Reg.cs" />
+    <Compile Include="ActInventorySingle.cs" />
+    <Compile Include="ActUnFixBarCode.cs" />
+    <Compile Include="ActWriteOff.cs" />
+    <Compile Include="ActWriteOffShop_v2.cs" />
+    <Compile Include="ActWriteOff_v2.cs" />
+    <Compile Include="ActWriteOff_v3.cs" />
+    <Compile Include="ASCPNavigation.cs" />
+    <Compile Include="Asiiu.cs" />
+    <Compile Include="AsiiuTime.cs" />
+    <Compile Include="CarrierNotice.cs" />
+    <Compile Include="ClientRef.cs" />
+    <Compile Include="ClientRef_v2.cs" />
+    <Compile Include="ConfirmRepealWB.cs" />
+    <Compile Include="ConfirmTicket.cs" />
+    <Compile Include="EGCommon.cs" />
+    <Compile Include="EGCommonEnum.cs" />
+    <Compile Include="EGCommonV3.cs" />
+    <Compile Include="InfoVersionTTN.cs" />
+    <Compile Include="ProductRef.cs" />
+    <Compile Include="ProductRef_v2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryBarcode.cs" />
+    <Compile Include="QueryFormAB.cs" />
+    <Compile Include="QueryFormF1F2.cs" />
+    <Compile Include="QueryParameters.cs" />
+    <Compile Include="QueryRejectRepImported.cs" />
+    <Compile Include="QueryRejectRepProduced.cs" />
+    <Compile Include="RepImportedProduct.cs" />
+    <Compile Include="RepImportedProduct_v3.cs" />
+    <Compile Include="RepInformF1Reg.cs" />
+    <Compile Include="ReplyAP.cs" />
+    <Compile Include="ReplyAP_v2.cs" />
+    <Compile Include="ReplyBarcode.cs" />
+    <Compile Include="ReplyClient.cs" />
+    <Compile Include="ReplyClientVersion.cs" />
+    <Compile Include="ReplyClient_v2.cs" />
+    <Compile Include="ReplyForm1.cs" />
+    <Compile Include="ReplyForm2.cs" />
+    <Compile Include="ReplyFormA.cs" />
+    <Compile Include="ReplyFormB.cs" />
+    <Compile Include="ReplyHistForm2.cs" />
+    <Compile Include="ReplyHistFormB.cs" />
+    <Compile Include="ReplyHistoryShop.cs" />
+    <Compile Include="ReplyNoAnswerTTN.cs" />
+    <Compile Include="ReplyParentHistForm2.cs" />
+    <Compile Include="ReplyRestBCode.cs" />
+    <Compile Include="ReplyRests.cs" />
+    <Compile Include="ReplyRestsShop_Mini.cs" />
+    <Compile Include="ReplyRestsShop_v2.cs" />
+    <Compile Include="ReplyRests_Mini.cs" />
+    <Compile Include="ReplyRests_v2.cs" />
+    <Compile Include="ReplySpirit.cs" />
+    <Compile Include="ReplySpirit_v2.cs" />
+    <Compile Include="ReplySSP.cs" />
+    <Compile Include="ReplySSP_v2.cs" />
+    <Compile Include="ReplyWriteOffCheque.cs" />
+    <Compile Include="RepProducedProduct.cs" />
+    <Compile Include="RepProducedProduct_v3.cs" />
+    <Compile Include="RequestAddForeignProducer.cs" />
+    <Compile Include="RequestAddProducts.cs" />
+    <Compile Include="RequestRepealACO.cs" />
+    <Compile Include="RequestRepealAWO.cs" />
+    <Compile Include="RequestRepealWB.cs" />
+    <Compile Include="Ticket.cs" />
+    <Compile Include="TransferFromShop.cs" />
+    <Compile Include="TransferToShop.cs" />
+    <Compile Include="TTNActSingle.cs" />
+    <Compile Include="TTNActSingle_v2.cs" />
+    <Compile Include="TTNActSingle_v3.cs" />
+    <Compile Include="TTNHistoryF2Reg.cs" />
+    <Compile Include="TTNInformBReg.cs" />
+    <Compile Include="TTNInformF2Reg.cs" />
+    <Compile Include="TTNSingle.cs" />
+    <Compile Include="TTNSingle_v2.cs" />
+    <Compile Include="TTNSingle_v3.cs" />
+    <Compile Include="WB_DOC_SINGLE_01.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
