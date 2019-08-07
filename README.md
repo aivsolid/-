@@ -5,8 +5,8 @@ Egais.Entities сгенерирован с помощью скрипта xsd2cod
 
 Для тестирования и отладки использовались Fiddler и Node-RED (смотри EgaisUtmFlow.json).
 
-Пример:
-
+#### Пример:
+```javascript
 UtmClient utmClient = new UtmClient("IUtm2");
 var getOutResponse = utmClient.GetOut();
 if (getOutResponse != null)
@@ -18,3 +18,4 @@ if (getOutResponse != null)
     }
 }
 utmClient.Close();
+```
