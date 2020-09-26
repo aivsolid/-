@@ -20,8 +20,8 @@ namespace Egais.Utm
                     path = "replypartner";
                     break;
                 default:
-                        path = docBodyType.ToString();
-                        break;
+                    path = docBodyType.ToString();
+                    break;
             }
             return path;
         }
